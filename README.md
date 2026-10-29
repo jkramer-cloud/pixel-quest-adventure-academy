@@ -21,3 +21,14 @@ Create a GitHub repository such as `pixel-quest-adventure-academy`, put `index.h
 
 ## Known limitations and future development
 This is an early, playable prototype rather than a completed 24-level game. The question library is intentionally small, and some educational questions only approximate grade targeting; content should be reviewed before use as formal assessment. Levels are procedurally assembled from curated patterns and need classroom balancing. Browser gameplay across devices has not been fully tested. The powered-up form is a simple larger sprite, not a detailed character animation sheet. Save data is local to a device/browser, and is not student-account synced. Future additions: more deeply authored maps, tile-art sprites, longer grade-specific question banks, enemy/boss variety, animations, and learning analytics.
+
+
+## v0.1.1 freeze / gate fix
+
+- Corrects blocked gate positions: solid door tiles now line up with their question gates.
+- Completing a gate question clears its associated tiles so the character can continue.
+- Resets movement input and refocuses the game after closing a question.
+- Stops the current movement frame when a question opens and avoids consuming a healing shrine before success.
+- If a student leaves a gate question, they are moved safely to the approach side and can retry.
+
+If the issue persists, use Restart level and report the stage and exact question type.
